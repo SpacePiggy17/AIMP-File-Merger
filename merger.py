@@ -84,7 +84,7 @@ def get_duration_color(duration1, duration2):
     """
     Compare two durations and return a color based on their similarity.
     """
-    if math.isclose(duration1, duration2, rel_tol=1e-):
+    if math.isclose(duration1, duration2, rel_tol=1e-4):
         return GREEN
     elif math.isclose(duration1, duration2, rel_tol=1e-2):
         return YELLOW
