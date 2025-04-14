@@ -9,5 +9,9 @@ The track names, play counts, and duration are listed in order to help the user 
 If track `a` is merged into track `b`, track `b`'s play count is updated and track `a` is scheduled for deletion.
 Finally, the "Tracks" table in `MusicLibrary_new.db` is replaced with the new rows.
 
+# Usage
+Clone the repo and run `python merger.py path/to/MusicLibrary.db`.
+The program will prompt the user for each pair of similar files.
+The updated file is written to `MusicLibrary_new.db`.
 To use the updated file, the user replaces the old `MusicLibrary.db` with the `MusicLibrary_new.db` file and zips the entire AIMP settings folder.
 Then the settings zip can be imported into AIMP. **Currently AIMP says this file is invalid.**
